@@ -39,19 +39,20 @@ body{
 }
 .qna{
     border-bottom: 1px solid hsl(0, 0%, 71%);
-    display: flex;
-    align-items: baseline ;
-    justify-content: space-between;
+   
 }
 .question{
     color: hsl(237, 12%, 33%);
     margin: 20px 0;
+    display: flex;
+    align-items: baseline ;
+    justify-content: space-between;
+
 }
 .answers{
     color: hsl(240, 6%, 50%);
     margin-bottom: 20px;
     font-size: 13px;
-    /* padding-right: 28px; */
     line-height: 1.5;
 }
 .images{
@@ -66,3 +67,9 @@ body{
 .foreground-image{
     margin-top: -130px;
 }
+details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
