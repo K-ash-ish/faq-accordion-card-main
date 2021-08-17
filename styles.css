@@ -40,7 +40,7 @@ body{
 .qna{
     border-bottom: 1px solid hsl(0, 0%, 71%);
     display: flex;
-    align-items: center;
+    align-items: baseline ;
     justify-content: space-between;
 }
 .question{
@@ -51,7 +51,7 @@ body{
     color: hsl(240, 6%, 50%);
     margin-bottom: 20px;
     font-size: 13px;
-    padding-right: 28px;
+    /* padding-right: 28px; */
     line-height: 1.5;
 }
 .images{
