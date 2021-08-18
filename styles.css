@@ -75,3 +75,14 @@ details > summary {
 details > summary::-webkit-details-marker {
     display: none;
   }
+
+
+@media (min-width:780px) {
+    
+    .faq-card{
+        display: flex;
+        align-items: center;
+    }
+    
+    
+}
