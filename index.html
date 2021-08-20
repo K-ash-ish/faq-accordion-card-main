@@ -17,12 +17,11 @@
 
     <div class="faq-card">
 
-      <div class="images">
-        <img class="foreground-image" src="images/illustration-woman-online-mobile.svg" alt="">
-        <img class="background-image" src="images/bg-pattern-mobile.svg" alt="">
-      </div>
-
-      
+      <picture class="images">
+        <source class="mobile-foreground-image" media="(max-width: 780px )" srcset="images/illustration-woman-online-mobile.svg" sizes="">
+        <source class="mobile-background-image" media="(max-width: 780px )" srcset="images/bg-pattern-mobile.svg" sizes="">
+        <img src="" alt="">
+      </picture>
 
       <div class="faq">
         <h1>FAQ</h1>

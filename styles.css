@@ -21,6 +21,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .faq-card{
@@ -34,6 +35,13 @@ body{
     margin-top: 120px;
     margin-bottom: 120px;
 }
+
+.mobile-foreground-image{
+    width: 30px;
+}
+
+
+
 .faq{
     padding-bottom: 50px;
 }
@@ -50,6 +58,12 @@ body{
     cursor: pointer;
 
 }
+
+.question:hover{
+    color: hsl(14, 88%, 65%);
+    transition: color 0.5s;
+}
+
 .answers{
     color: hsl(240, 6%, 50%);
     margin-bottom: 20px;
@@ -57,32 +71,13 @@ body{
     line-height: 1.5;
     
 }
-.images{
-    text-align: center;
-    margin-bottom: 30px;
-}
 
-.background-image{
-    margin-left: 25px;
-    margin-top: -100px;
-}
-.foreground-image{
-    margin-top: -130px;
-}
 details > summary {
     list-style: none;
   }
 details > summary::-webkit-details-marker {
     display: none;
   }
-
-
-@media (min-width:780px) {
-    
-    .faq-card{
-        display: flex;
-        align-items: center;
-    }
-    
-    
+.desktop-bg-pattern{
+    width: 10%;
 }
