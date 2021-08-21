@@ -30,17 +30,12 @@ body{
     height: auto;
     border-radius: 20px;
     padding: 20px;
-    /* z-index: -2; */
-    /* margin:100px 0 100px 0; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 120px;
     margin-bottom: 120px;
 }
-
-.mobile-foreground-image{
-    width: 30px;
-}
-
-
 
 .faq{
     padding-bottom: 50px;
@@ -80,4 +75,15 @@ details > summary::-webkit-details-marker {
   }
 .desktop-bg-pattern{
     width: 10%;
+}
+
+
+@media (min-width: 780px) {
+    .faq-card{
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -60% 70%;
+    background-size: 60%;
+    }
+    
 }
