@@ -23,16 +23,6 @@ body{
     align-items: center;
     height: 100vh;
 }
-.image-container{
-    text-align: center;
-}
- .background-image-mobile{
-     margin-top: -110px;
-     margin-left: 30px;
-} 
-.foreground-image-mobile{
-    margin-top: -130px;
-}
 
 .faq-card{
     background-color: white;
@@ -46,6 +36,16 @@ body{
     margin-bottom: 120px;
     
 }
+.image-container{
+    text-align: center;
+}
+ .background-image-mobile{
+     margin-top: -110px;
+     margin-left: 30px;
+} 
+.foreground-image-mobile{
+    margin-top: -130px;
+}
 
 .faq{
     padding-bottom: 50px;
@@ -58,10 +58,13 @@ body{
     color: hsl(237, 12%, 33%);
     margin: 20px 0;
     display: flex;
-    align-items: baseline ;
+    align-items: center ;
     justify-content: space-between;
     cursor: pointer;
 
+}
+.question > img{
+    margin-left: 50px;
 }
 
 .question:hover{
@@ -83,29 +86,54 @@ details > summary {
 details > summary::-webkit-details-marker {
     display: none;
   }
-.desktop-bg-pattern{
-    width: 10%;
-}
 
 @media (min-width: 790px) {
+    h1{
+        text-align: left;
+    }
+   
     .background-image-mobile{
         display: none;
     }
     .foreground-image-mobile{
         display: none;
     }
+    .faq-card{
+        padding-right: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
     
+    .image-container{
+        width: 50%;
+        text-align: left;
+    }
+    
+    .foreground-image-desktop{
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        left: 120px;
+    }
+    .box-desktop{
+        position: absolute;
+        left: 95px;
+        top: 300px
+    }
+    
+}
+@media (max-width: 790px) {
+    
+    .foreground-image-desktop{
+        display: none;
+    }
+    .background-image-desktop{
+        display: none;
+    }
+    .box-desktop{
+        display: none;
+    }
     
 }
 
-
-
-/* 
-@media (min-width: 780px) {
-    .faq-card{
-    background-image: url("images/bg-pattern-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: -60% 70%;
-    background-size: 60%;
-    }
-     */
