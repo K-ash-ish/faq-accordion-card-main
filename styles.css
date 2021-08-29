@@ -147,6 +147,9 @@ details > summary::-webkit-details-marker {
     .box-desktop{
         display: none;
     }
+    .background-destop{
+        display: none;
+    }
     
 }
 
